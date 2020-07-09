@@ -3,13 +3,11 @@ def oxford_comma(array)
     newstring = "#{array[0]}"
   elsif array.length==2
     newstring = array.join(" and ")
-  elsif array.length > 2
+  else array.length > 2
     holdelement = array.pop(1) #holds last element
     holdelement = "#{holdelement[0]}"
     newstring = array.join(", ")
     newstring = "#{newstring}" + ", and " + "#{holdelement}" #addback last element
-  else
-    newstring = array.join(", ")
   end
   return newstring
 end
