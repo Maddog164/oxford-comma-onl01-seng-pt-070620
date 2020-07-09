@@ -5,7 +5,7 @@ def oxford_comma(array)
     newstring = array.join(" and ")
   else array.length > 2
     holdelement = array.pop(1) #holds last element
-    holdelement = "#{holdelement[0]}"
+    holdelement = "#{holdelement[0]}" #convert to string vs array
     newstring = array.join(", ")
     newstring = "#{newstring}" + ", and " + "#{holdelement}" #addback last element
   end
