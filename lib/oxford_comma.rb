@@ -6,7 +6,7 @@ def oxford_comma(array)
   elsif array.length==2
     newstring = array.join(" and ")
   elsif array.length ==3
-    holdelement = "#{array.pop(1)}" #holds last element
+    holdelement = {array.pop(1) #holds last element
     binding.pry
     newstring = array.join(", ")
     newstring = "#{newstring}" + " and " + "#{holdelement}" #addback last element
